@@ -25,7 +25,10 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3"
     ],
-    packages=["callystio"],
+    packages=[
+        'callystio',
+        'callystio.builders',
+        'callystio.loaders'],
     install_requires=[
         'notebook ~= 6.1',
         'jinja2 ~= 2.11',
@@ -33,5 +36,10 @@ setup(
         'click ~= 7.1',
         'coloredlogs ~= 15.0'
     ],
+    entry_points={
+        'console_scripts': [
+            'callystio=callystio.cli:cli'
+        ]
+    },
     include_package_data=True
 )
