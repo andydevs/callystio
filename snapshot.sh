@@ -2,5 +2,5 @@
 echo '------------------------------------------------BUILDING SITE---------------------------------------------------'
 python -m callystio build
 echo '----------------------------------------------UPDATING SNAPSHOTS------------------------------------------------'
-test -d snapshots && rm -rf snapshots/* || mkdir snapshots
-cp dist/* snapshots/
+test -d snapshot && rm -rf snapshot/* || mkdir snapshot
+cp dist/* snapshot/
