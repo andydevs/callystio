@@ -26,5 +26,12 @@ setup(
         "Programming Language :: Python :: 3"
     ],
     packages=["callystio"],
+    install_requires=[
+        'notebook ~= 6.1',
+        'jinja2 ~= 2.11',
+        'markdown ~= 3.3',
+        'click ~= 7.1',
+        'coloredlogs ~= 15.0'
+    ],
     include_package_data=True
 )
