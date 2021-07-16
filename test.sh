@@ -4,9 +4,9 @@ set -o pipefail
 echo '------------------------------------------------BUILDING SITE---------------------------------------------------'
 python -m callystio build
 echo '-----------------------------------------------TESTING SNAPSHOT-------------------------------------------------'
-for file in $(ls ./dist); do
+for file in $(ls ./public); do
     echo "test -f snapshot/$file"
     test -f snapshot/$file
-    echo "cmp dist/$file snapshot/$file"
-    cmp dist/$file snapshot/$file
+    echo "cmp public/$file snapshot/$file"
+    cmp public/$file snapshot/$file
 done

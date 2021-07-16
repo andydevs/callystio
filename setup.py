@@ -13,7 +13,7 @@ with open('README.md', 'r') as f:
 # Setup function
 setup(
     name='callystio',
-    version='0.0.0',
+    version='1.0.0',
     description='Jupyter notebook site generator',
     long_description=readme,
     long_description_content_type='text/markdown',

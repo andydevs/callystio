@@ -3,3 +3,4 @@
 # Author:  Anshul Kharbanda
 # Created: 10 - 12 - 2020
 base_url = '/andys-notebook'
+output_dir = 'public'
